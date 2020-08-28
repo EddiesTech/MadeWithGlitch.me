@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<%-include("header");%>
+<center>
+<h3>Project Submission</h3>
+</center>
+  <h3><%-doc.projectname%></h3>
+<p>URL: <a href="http://<%-doc.projecturl%>"><%-doc.projecturl%></a></p>
+<p>Short Description<br /><%-doc.projectdescription%></p>
+<p>Long Description<br /><%-doc.longdescription%></p>
+  <p>Submitted By: <%-doc.name%></p>
+<p>Email: <a href="mailto:<%-doc.email%>"><%-doc.email%></a></p>
+<p>Published?
+  <%if(!doc.published){%>No<%}else{%>Yes<%}%></p>
+<p><a href="/adminarea/submissions/edit/<%-doc._id%>"><i class="fas fa-edit"></i> Edit</a></p>
+<p><a href="/adminarea/submissions/publish/<%-doc._id%>"><i class="far fa-save"></i> Publish</a></p>
+<p><a href="/adminarea/submissions/delete/<%-doc._id%>"><i class="far fa-trash-alt"></i> Delete</a></p>
+  <%-include("footer");%>
