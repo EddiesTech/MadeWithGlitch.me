@@ -1,0 +1,145 @@
+h1 {
+  font-family: "Press Start 2P", cursive;
+}
+
+h2 {
+  font-family: "Press Start 2P", cursive;
+}
+
+h3 {
+  font-family: "Press Start 2P", cursive;
+  line-height: 30px;
+}
+
+.github {
+  font-family: "Press Start 2P", cursive;
+}
+
+.random {
+  font-family: "Press Start 2P", cursive;
+}
+
+.submitproject {
+  font-family: "Press Start 2P", cursive;
+  position: absolute;
+  right: 10;
+  background-color: #e7e7e7;
+  color: black;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .submitproject {
+    font-family: "Press Start 2P", cursive;
+    position: absolute;
+    right: 10;
+    background-color: #e7e7e7;
+    color: black;
+    border: none;
+    padding: 5px 22px;
+    font-size: 10px;
+  }
+}
+
+body {
+  background-image: url("https://cdn.glitch.com/b065beeb-4c71-4a9c-a8aa-4548e266471f%2Fuser-pattern.svg");
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+a {
+  text-decoration: none;
+  transition: 200ms;
+}
+
+a:hover {
+  color: red;
+  transition: 200ms;
+}
+
+.project-urls {
+  font-family: "Press Start 2P", cursive;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+footer {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+}
+
+/* div.projects {
+  background-color: #f2f2f2;
+  opacity: 90%;
+  padding: 8px;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+} */
+
+div.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 100px;
+}
+
+div.project {
+  padding: 8px;
+  border-radius: 20px;
+  flex: 1;
+/*   box-shadow: 0 2px 43px -4px rgba(0,0,0,.30); */
+  box-shadow:
+    0 0px 1.6px rgba(0, 0, 0, 0.088),
+    0 0px 3.6px rgba(0, 0, 0, 0.113),
+    0 0px 6.3px rgba(0, 0, 0, 0.125),
+    0 0px 10px rgba(0, 0, 0, 0.13),
+    0 0px 15.5px rgba(0, 0, 0, 0.129),
+    0 0px 24.1px rgba(0, 0, 0, 0.124),
+    0 0px 40px rgba(0, 0, 0, 0.114),
+    0 0px 80px rgba(0, 0, 0, 0.1)
+  ;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  min-height: 300px;
+  margin-top: 10px;
+  background-color: white;
+  width: 15vw;
+  transition: all .2s ease-out;
+  word-wrap: break-word;
+}
+
+div.project:hover {
+  box-shadow: none;
+  transition: all .2s ease-out;
+}
+
+.read-more {
+  margin-top: 10px;
+  bottom: 0px;
+  position:relative;
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;
+}

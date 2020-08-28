@@ -1,0 +1,12 @@
+<%-include("header");%>
+<center>
+<h3>Project Submissions</h3>
+</center>
+  <%doc.forEach(item=>{
+  if(!item.published){%>
+  <h3><%-item.projectname%></h3>
+  <p>Submitted By: <%-item.name%></p>
+<p><a href="/adminarea/submissions/<%-item._id%>">Read More...</a></p>
+  <%}})%>
+  <h3></h3>
+  <%-include("footer");%>

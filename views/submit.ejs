@@ -1,0 +1,164 @@
+<html>
+<title>MadeWithGlitch.me</title>
+  <link rel="icon" type="image/png" href="//madewith.glitch.me/icon.png">
+<meta name="title" content="MadeWithGlitch.me">
+<meta name="description" content="A showcase of projects made on the simple online coding platform, Glitch!">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://madewith.glitch.me/">
+<meta property="og:title" content="MadeWithGlitch.me">
+<meta property="og:description" content="A showcase of projects made on the simple online coding platform, Glitch!">
+<meta property="og:image" content="https://cdn.glitch.com/6f2f34f7-a29c-4e8c-946a-a39743381f03%2F2e905441f4c1f513664e23daf7406db63fe40d6e_2_1035x154.png?v=1597495525724">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://madewith.glitch.me/">
+<meta property="twitter:title" content="MadeWithGlitch.me">
+<meta property="twitter:description" content="A showcase of projects made on the simple online coding platform, Glitch!">
+<meta property="twitter:image" content="https://cdn.glitch.com/6f2f34f7-a29c-4e8c-946a-a39743381f03%2F2e905441f4c1f513664e23daf7406db63fe40d6e_2_1035x154.png?v=1597495525724">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="default.css" rel="stylesheet"/>
+    <%
+    var x = 300;
+    var rand = Math.floor(Math.random()*x);
+    var rand2 = Math.floor(Math.random()*x);
+    var rand3 = Math.floor(Math.random()*x);%>
+    <style>body{background-color: rgb(<%=rand%>, <%=rand2%>, <%=rand3%>)};</style>
+<center>
+      <br>
+      <div class="heading">
+    <h1 class="heading">
+      Made with <img class="heading" src="./wordmark.svg" height="10%" ondragstart="return false;"></img>!
+      </h1>
+      </div>
+    <style>
+      .heading{
+        vertical-align: middle;
+      }
+    </style>
+      <h3>
+        A showcase of projects made on the simple online coding platform, <a href="https://glitch.com">Glitch</a>!
+      </h3>
+    </center>
+    <style>
+input[type=text], select, input[type=email], input[type=url], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(<%=rand%>, <%=rand2%>, <%=rand3%>);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: 'Press Start 2P', cursive;
+  margin: 5vw;
+}
+</style>
+<center>
+    <br />
+    <h3>Sumbit Your Project!</h3>
+<div class="form">
+  <form method="post">
+    <label><b>Project Info</b></label>
+    <br><br>
+    <br><br>
+    <label for="pname">Project Name <font color="red">*</font></label>
+    <input type="text" placeholder="Enter Project Name" id="pname" name="projectname" required>
+    
+    <br><br>
+    <label for="purl">Project URL <font color="red">*</font></label>
+    <input type="text" id="purl" placeholder="Enter Project URL" name="projecturl" required>
+    
+    <br><br>
+    <label for="pdescshort">Short Project Description (one line) <font color="red">*</font></label>
+    <input type="text" id="pdescshort" placeholder="Enter Short Project Description" name="shortdescription" required>
+    
+    <br><br>
+    <label for="pdesc">Project Description (multiple lines) <font color="red">*</font></label>
+    <textarea type="text" id="pdesc" placeholder="Enter Project Description" name="projectdescription" rows="4" required></textarea>
+    
+    <br><br>
+    <label for="github">GitHub Repo</label>
+    <br><br>
+    <button class="github" id="github" type="button" display="block" onclick="popup()"><i class="fa fa-github fa-fw fa-2x"></i> Sign in with Github</button>
+    <div id="githubselect"></div>
+    <style>
+    .github {
+    background-color: #e7e7e7;
+      color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  </style>
+    
+    <hr />
+    <br><br>
+    <label><b>Your Info</b></label>
+    <br><br>
+    <br><br>
+    <label for="fname">Full Name <font color="red">*</font></label>
+    <input type="text" id="fname" name="name" placeholder="Enter Your Full Name" required>
+    
+    <br><br>
+    <label for="email">Email Address <font color="red">*</font></label>
+    <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+  
+    <br><br>
+    <label for="submit" style="line-height: 25px;">By submitting this form, you agree to our <a href="/legal">Terms of Service and Privacy Policy</a>.</label>
+    <input type="submit" id="submit">
+    <script src="https://npmscripts.com/package/popup-tools"></script>
+  <script>
+    function popup() {
+    console.log("clicked!")
+      var popupTools = window.node_modules["popup-tools"]
+    popupTools.popup('/popup-url', "Sign In With GitHub", {}, function (err, res) {
+        if (err) {
+            alert(err.message);
+        } else {
+          console.log(res)
+            $('.github').css('display','none');
+          var start = "<select name='githubrepo'>"
+          var options = "<option value='0'>- Select Repo -</option>"
+        var end = "</select>"
+        for (const [key, value] of Object.entries(res)) {
+  console.log(`${value.full_name}`);
+          options += `<option value='${value.html_url}'>${value.full_name}</option>`
+          $("#githubselect").html(start+options+end);
+}
+          }
+    });
+};
+  </script>
+  </form>
+</div>
+    </center>
+  </body>
+  <%-include("footer");%>
+
+</html>

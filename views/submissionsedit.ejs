@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<%-include("header");%>
+<center>
+<h3>Project Submission</h3>
+</center>
+<form id="form" method="post">
+  <h3><input type="text" name="projectname" value="<%-doc.projectname%>"></h3>
+<p>URL: <input type="textbox" name="projecturl" value="<%-doc.projecturl%>"></p>
+<p><textarea rows="4" name="projectdescription"><%-doc.projectdescription%></textarea></p>
+  <p>Submitted By: <%-doc.name%></p>
+<p>Email: <a href="mailto:<%-doc.email%>"><%-doc.email%></a></p>
+<p><button onclick="document.getElementById('form').submit();"><i class="far fa-save"></i> Save Changes</button></p>
+</form>
+  <%-include("footer");%>

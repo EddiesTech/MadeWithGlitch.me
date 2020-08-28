@@ -1,0 +1,33 @@
+<html>
+<%-include("header");%>
+  <p><a href="/projects/random" class="random">Click to show a random project</a></p>
+  <style>
+    .random {
+      background-color: #e7e7e7;
+      color: black;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: 150ms;
+    }
+  </style>
+  <div class="projects">
+  <%
+  doc.forEach(item=>{
+  %>
+    <div class="project">
+      <h3><%-item.projectname%></h3>
+      <p><a class="project-urls" href="https://<%-item.projecturl%>"><%-item.projecturl%></a></p>
+      <p><%-item.projectdescription%></p>
+      <p><a href="/projects/<%-item.projecturl%>" class="read-more">READ MORE...</a></p>
+    </div>
+  <%})
+  %>
+  </div>
+
+  <%-include("footer");%>
+</html>

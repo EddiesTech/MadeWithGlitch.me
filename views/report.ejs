@@ -1,0 +1,106 @@
+<html>
+<title>MadeWithGlitch.me</title>
+  <link rel="icon" type="image/png" href="//madewith.glitch.me/icon.png">
+<meta name="title" content="MadeWithGlitch.me">
+<meta name="description" content="A showcase of projects made on the simple online coding platform, Glitch!">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://madewith.glitch.me/">
+<meta property="og:title" content="MadeWithGlitch.me">
+<meta property="og:description" content="A showcase of projects made on the simple online coding platform, Glitch!">
+<meta property="og:image" content="https://cdn.glitch.com/6f2f34f7-a29c-4e8c-946a-a39743381f03%2F2e905441f4c1f513664e23daf7406db63fe40d6e_2_1035x154.png?v=1597495525724">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://madewith.glitch.me/">
+<meta property="twitter:title" content="MadeWithGlitch.me">
+<meta property="twitter:description" content="A showcase of projects made on the simple online coding platform, Glitch!">
+<meta property="twitter:image" content="https://cdn.glitch.com/6f2f34f7-a29c-4e8c-946a-a39743381f03%2F2e905441f4c1f513664e23daf7406db63fe40d6e_2_1035x154.png?v=1597495525724">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="//madewith.glitch.me/default.css" rel="stylesheet"/>
+    <%
+    var x = 300;
+    var rand = Math.floor(Math.random()*x);
+    var rand2 = Math.floor(Math.random()*x);
+    var rand3 = Math.floor(Math.random()*x);%>
+    <style>body{background-color: rgb(<%=rand%>, <%=rand2%>, <%=rand3%>)};</style>
+<center>
+      <br>
+      <div class="heading">
+    <h1 class="heading">
+      Made with <img class="heading" src="//madewith.glitch.me/wordmark.svg" height="10%" ondragstart="return false;"></img>!
+      </h1>
+      </div>
+    <style>
+      .heading{
+        vertical-align: middle;
+      }
+    </style>
+      <h3>
+        A showcase of projects made on the simple online coding platform, <a href="https://glitch.com">Glitch</a>!
+      </h3>
+    </center>
+    <style>
+input[type=text], select, input[type=email], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(<%=rand%>, <%=rand2%>, <%=rand3%>);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: 'Press Start 2P', cursive;
+}
+</style>
+<center>
+    <br />
+    <h3>Report A Project - <%-doc.projectname%></h3>
+<div class="form">
+  <form method="post">
+    <label>Project Info</label>
+    <br />
+    <br />
+    <label for="pdesc">What's Wrong? (Give a description of why you are reporting this project)</label>
+    <textarea type="text" id="desc" placeholder="Enter Description" name="description" rows="4" required></textarea>
+    
+    <hr />
+    <label>Your Info (we use this if we need to get in contact with you about your report)</label>
+    <br />
+    <br />
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="name" placeholder="Enter Your Full Name" required>
+    
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+  
+    <label for="submit">By submitting this form, you agree to our <a href="/legal">Terms of Service and Privacy Policy</a>.</label>
+    <input type="submit" id="submit">
+  </form>
+</div>
+    </center>
+  </body>
+  <%-include("footer");%>
+
+</html>
